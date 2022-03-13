@@ -1,0 +1,11 @@
+ CLIENT
+netcat - nc
+
+l  - listen
+
+nc  -l 8080
+
+SERVER
+
+nc 127.0.0.1 8081
+Hello World! 
