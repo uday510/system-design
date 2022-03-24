@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "express-ws": "^5.0.2",
+    "websocket": "^1.0.34"
+  }
+}
