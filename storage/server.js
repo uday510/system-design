@@ -9,7 +9,7 @@ app.use(express.json());
 const hashTable = {};
 
 app.post('/memory/:key', (req, res) => {
-    hashTable[req.params.key] = req.body;
+    hashTable[req.params.key] = req.body.data;
     res.send();
 });
 
@@ -18,6 +18,7 @@ app.get('/memory/:key', (req, res) => {
     if(key in hashTable) {
        return res.send(hashTable[key]);
     }
+    return res.send('null');
 });
 
 app.post('/disk/:key', (req, res) => {

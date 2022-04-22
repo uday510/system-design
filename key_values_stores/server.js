@@ -12,9 +12,15 @@ app.get('/nocache/index.html', (req, res) => {
 
 app.get('/withcache/index.html', (req, res) => {
     redis.get('index.html', (err, redisRes) => {
-     if(redisRes) {
+     try {
+         if(redisRes) {
         res.send(redisRes); 
         return;
+      }
+     } catch(err) {
+         console.log(err);
+         res.send();
+         return;
      }
 
      database.get('index.html', page => {

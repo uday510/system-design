@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 
-const port = process.env.PORT;
+const port = 8081;
 
 
-app.listen(port, () => console.log(`Listening on port ${port}.`));
+app.listen(8081, () => console.log(`Listening on port ${port}.`));
 
 app.get('/hello', (req, res) => {
     console.log(req.headers);

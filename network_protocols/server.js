@@ -13,15 +13,15 @@ app.listen(port, () => {
 });
 
 app.get('/hello', (req, res) => {
-    console.log('Headers', req.headers);
-    console.log('Method', req.method);
-    console.log('Body', req.body);
+    console.log('Headers:', req.headers);
+    console.log('Method:', req.method);
+    console.log('Body:', req.body);
     res.send('Received GET request:\n');
 });
 
 app.post('/hello', (req, res) => {
-    console.log('Headers', req.headers);
-    console.log('Method', req.method);
-    console.log('Body', req.body);
+    console.log('Headers:', req.headers);
+    console.log('Method:', req.method);
+    console.log('Body:', req.body);
     res.send('Received POST request:\n');
 });

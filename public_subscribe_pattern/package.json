@@ -1,0 +1,19 @@
+{
+  "name": "public_subscribe_pattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "messaging_api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3",
+    "express-ws": "^5.0.2",
+    "ws": "^8.5.0"
+  }
+}
